@@ -42,10 +42,10 @@ def book():
         except Exception as e:
             print("wrong..")
             print(e)
-            logging.error(browser.execute_script("return window.performance.memory"))
+            #logging.error(browser.execute_script("return window.performance.memory"))
             logging.error("wrong..")
             logging.exception(e)
-            clear(browser)
+            #clear(browser)
         time.sleep(0.5)
         print(time.asctime(time.localtime(time.time())) + "no wednesday")
         logging.error(time.asctime(time.localtime(time.time())) + "no wednesday")
